@@ -15570,7 +15570,7 @@ Yeah, yeah, yeah, yeah9Embed
     <span class="c1">#Reading from json file</span>
     <span class="n">json_object</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">openfile</span><span class="p">)</span>
 <span class="c1"># Print JSON_Object inorder to check work    </span>
-<span class="c1"># print(json_object)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">json_object</span><span class="p">)</span>
 
 <span class="c1"># Download inital model </span>
 <span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;en_core_web_sm&quot;</span><span class="p">)</span>
@@ -15579,6 +15579,10 @@ Yeah, yeah, yeah, yeah9Embed
 <span class="c1"># Applies SpacyTextBlob</span>
 <span class="n">nlp</span><span class="o">.</span><span class="n">add_pipe</span><span class="p">(</span><span class="s2">&quot;spacytextblob&quot;</span><span class="p">)</span>
 <span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+<span class="c1"># Add spaces</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 
 <span class="c1"># Print the polarity score</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The polarity score of the sentiment analysis is: </span><span class="si">{</span><span class="n">doc</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">polarity</span><span class="si">:</span><span class="s2">.05</span><span class="si">}</span><span class="se">\n</span><span class="s2">I think the score of </span><span class="si">{</span><span class="n">doc</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">polarity</span><span class="si">:</span><span class="s2">0.5</span><span class="si">}</span><span class="s2"> is reflective of the fairly positive connotation of the lyrics.&quot;</span><span class="p">)</span>
@@ -15608,7 +15612,58 @@ Yeah, yeah, yeah, yeah9Embed
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The polarity score of the sentiment analysis is: 0.22743
+<pre>19 ContributorsTranslationsDanskEspañolPortuguêsBest for Last Lyrics
+Wait, do you see my heart on my sleeve?
+It&#39;s been there for days on end
+And it&#39;s been waitin&#39; for you to open up yours, too
+Baby, come on now, I&#39;m trying to tell you just how
+I&#39;d like to hear the words roll out of your mouth finally
+Say that it&#39;s always been me
+
+That&#39;s made you feel a way you&#39;ve never felt before
+And I&#39;m all you need and that you never want more
+Then you&#39;d say all of the right things without a clue
+But you&#39;d save the best for last like I&#39;m the one for you
+
+You should know that you&#39;re just a temporary fix
+This is not rooted with you, it don&#39;t mean that much to me
+You&#39;re just a filler in the space that happened to be free
+How dare you think you&#39;d get away with tryin&#39; to play me, yeah?
+
+Why is it every time I think I&#39;ve tried my hardest
+It turns out it ain&#39;t enough?
+You&#39;re still not mentioning love
+What am I supposed to do to make you want me properly?
+I&#39;m takin&#39; these chances and getting nowhere
+And though I&#39;m trying my hardest, you go back to her
+And I think that I know things may never change
+I&#39;m still hopin&#39; one day I might hear you say
+See Adele LiveGet tickets as low as $540You might also like
+I make you feel a way you&#39;ve never felt before
+And I&#39;m all you need and that you never want more
+Then you&#39;d say all of the right things without a clue
+But you&#39;d save the best for last like I&#39;m the one for you
+
+You should know that you&#39;re just a temporary fix
+This is not rooted with you, it don&#39;t mean that much to me
+You&#39;re just a filler in the space that happened to be free
+How dare you think you&#39;d get away with tryin&#39; to play me, yeah?
+
+But, despite the truth that I know
+I find it hard to let go and give up on you
+Seems I love the things you do
+Like the meaner you treat me, more eager I am
+To persist with this heartbreak of runnin&#39; around
+And I will do until I&#39;m findin&#39; myself with you
+
+And make you feel a way you&#39;ve never felt before
+And be all you need so that you never want more
+Then you&#39;d say all of the right things without a clue
+And you&#39;ll be the one for me and me, the one for you
+Yeah, yeah, yeah, yeah9Embed
+
+
+The polarity score of the sentiment analysis is: 0.22743
 I think the score of 0.22743 is reflective of the fairly positive connotation of the lyrics.
 </pre>
 </div>
